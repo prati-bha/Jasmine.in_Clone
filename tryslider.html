@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.jasminebeauty.in/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.jasminebeauty.in/css/rev-settings.css">
+    <link href="https://www.jasminebeauty.in/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.jasminebeauty.in/css/style.css">
+</style>
+</head>
+<body>
+<div class="header-top" id="home">
+   <div class="fullwidthbanner-container">
+    <div id="revolution-slider">
+      <ul>
+        <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">
+          <img src="img2.png" alt="">
+          <div class="tp-caption sfb custom-font-1" data-x="15" data-y="250" data-speed="800" data-start="1400" data-easing="easeInOutCubic">
+             <div class="container">Exclusive for Women</div>
+          </div>
+        </li>
+        
+        <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">
+          <img src="img1.png" alt="">
+          <div class="tp-caption sfb custom-font-1" data-x="15" data-y="250" data-speed="800" data-start="1400" data-easing="easeInOutCubic">
+             <div class="container">Exclusive for Women</div>
+          </div>
+        </li>
+        
+        <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">
+          <img src="img3.png" alt="">
+          <div class="tp-caption sfb custom-font-1" data-x="15" data-y="250" data-speed="800" data-start="1400" data-easing="easeInOutCubic">
+             <div class="container">Exclusive for Women</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
